@@ -1,0 +1,11 @@
+// src/components/Card/Card.scss
+
+@import '../../styles/variables';
+
+.card {
+  background-color: $primary-color;
+  color: white;
+  margin: $margin-size;
+  font-family: $font-family;
+  // Autres styles spécifiques à la card...
+}

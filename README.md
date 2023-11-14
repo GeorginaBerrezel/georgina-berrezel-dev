@@ -68,3 +68,66 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+# Mon Portfolio
+
+Bienvenue sur mon portfolio ! Ce projet a été créé avec React et utilise SCSS pour les styles.
+
+## Installation
+
+Suivez ces étapes pour installer et exécuter le projet localement :
+
+1. **Clonez le projet :**
+
+   ```bash
+   git clone https://github.com/ton-utilisateur/mon-portfolio.git
+   cd mon-portfolio
+   
+
+## Installez les dépendances :
+
+    ``` bash
+    npm install
+
+2. **Compilez les fichiers SCSS :**
+
+    ``` bash
+    npm run compile-scss
+
+## Lancez le serveur de développement :
+
+    ``` bash
+    npm start
+
+Le projet sera accessible à l'adresse http://localhost:3000 dans votre navigateur.
+
+## Problèmes Courants et Solutions
+Erreur de Compilation avec node-sass
+Si vous rencontrez des problèmes de compilation avec node-sass, essayez d'utiliser le package sass à la place :
+
+    ``` bash
+    npm uninstall node-sass
+    npm install sass --save-dev
+
+## Modifiez également vos scripts dans le fichier package.json pour utiliser sass :
+
+    ``` bash
+    "scripts": {
+    // ...
+    "compile-scss": "sass src/styles/App.scss src/styles/App.css"
+    // ...
+    }
+
+Erreurs liées à 'jsxDEV'
+Si vous rencontrez des erreurs liées à 'jsxDEV', assurez-vous que vous utilisez les dernières versions de React et react-scripts :
+
+    ``` bash
+    npm install react@latest react-dom@latest react-scripts@latest
+
+## N'oubliez pas de supprimer le dossier node_modules et le fichier package-lock.json avant de réinstaller les dépendances.
+
+## Contribuer
+Si vous souhaitez contribuer à ce projet, n'hésitez pas à ouvrir une issue ou une pull request. Votre contribution est la bienvenue !
+
+Copie et colle ce contenu dans ton fichier `README.md`. Si tu as d'autres demandes ou des ajustements à faire, n'hésite pas à me le faire savoir !
