@@ -1,6 +1,40 @@
 // src/styles/_variables.scss
+// _variables.scss
 
-$primary-color: #007bff;
-$secondary-color: #333;
-$font-family: 'Arial', sans-serif;
+
 $margin-size: 16px;
+
+// Définition de la police globale
+$font-family: 'Fira Code', monospace;
+
+// Variables pour la taille de la police
+$font-size-code-snippets: 14px;
+$font-size-labels: 16px;
+$font-size-body-text: 18px;
+$font-size-subheadline-text: 32px;
+$font-size-headline-text: 62px;
+
+
+// Couleurs primaires
+$color-primary-dark: #01080E;
+$color-primary-medium: #011627;
+$color-primary-light: #011221;
+
+// Couleurs secondaires
+$color-secondary-grey: #607B96;
+$color-secondary-green: #3C9D93;
+$color-secondary-purple: #4D5BCE;
+$color-secondary-white: #FFFFFF;
+
+// Couleurs d'accent
+$color-accent-orange: #FEA55F;
+$color-accent-green: #43D9AD;
+$color-accent-solmon: #E99287;
+$color-accent-pink: #C98BDF;
+
+// Couleur de lignes
+$color-lines: #1E2D3D;
+
+// Dégradés
+$gradient-blue: #4D5BCE;
+$gradient-green: #43D9AD;

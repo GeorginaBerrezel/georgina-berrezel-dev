@@ -1,8 +1,10 @@
 /* src/components/Header/Header.css */
+@import '../../styles/variables';
+
 header {
   /* Styles spécifiques à l'en-tête ici */
-  background-color: #333;
-  color: #fff;
+  background-color: $color-primary-dark;
+  color: $color-secondary-white;
   padding: 16px;
   text-align: center;
 }

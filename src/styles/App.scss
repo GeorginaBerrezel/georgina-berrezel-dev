@@ -1,10 +1,17 @@
-// App.scss
+// Import de la police Fira Code
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
 
-$primary-color: #282c34;
-$accent-color: #61dafb;
+// Import des variables
+@import '_variables.scss';
+
+body {
+  font-family: $font-family;
+}
 
 .App {
   text-align: center;
+
+  font-size: $font-size-body-text;
 
   &-logo {
     height: 40vmin;
@@ -16,17 +23,17 @@ $accent-color: #61dafb;
   }
 
   &-header {
-    background-color: $primary-color;
+    background-color: $color-primary-dark;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+    font-size: $font-size-headline-text;
+    color: $color-secondary-white;
 
     &-link {
-      color: $accent-color;
+      color: $color-secondary-white;
     }
   }
 }
