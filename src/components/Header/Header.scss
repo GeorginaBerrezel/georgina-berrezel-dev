@@ -1,10 +1,46 @@
-/* src/components/Header/Header.css */
+// src/components/Header/Header.scss
 @import '../../styles/variables';
 
 header {
-  /* Styles spécifiques à l'en-tête ici */
-  background-color: $color-primary-dark;
-  color: $color-secondary-white;
-  padding: 16px;
-  text-align: center;
+  //background-color: #333;
+  color: white;
+  //padding: 14px 16px;
+  border-bottom: 0.5px solid $color-secondary-grey; // Ajout du trait en bas
+
+  .nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  .nav-item {
+    border-right: 0.5px solid $color-secondary-grey;
+    padding: 1.5rem;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      border-bottom: 5px solid $color-accent-orange;
+    }
+
+    &:last-child {
+      border-right: none;
+      margin-right: 0;
+      margin-left: auto; // Placer le dernier élément à droite
+      border-left: 0.5px solid #607B96;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: $color-secondary-grey;
+      font-weight: bold;
+      font-size: 16px;
+
+      &:hover,
+      &:focus {
+        color: $color-secondary-white;
+      }
+    }
+  }
 }
