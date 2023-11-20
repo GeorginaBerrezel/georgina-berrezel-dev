@@ -1,0 +1,51 @@
+@import '../../styles/variables';
+body {
+  margin: 0;
+}
+.container-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; // Maintient le contenu centré horizontalement
+  text-align: left; // Alignement du texte à gauche
+  min-height: 100vh; // Cela garantit que le contenu est centré verticalement sur toute la hauteur de la fenêtre
+  margin-left: auto;
+  margin-right: auto;
+  .text-home {
+    font-size: $font-size-body-text;
+    color: $color-secondary-white;
+  }
+
+  .title-home {
+    color: $color-secondary-white;
+    font-size: $font-size-headline-text;
+    font-weight: unset;
+  }
+
+  .subtitle-home {
+    color: $color-secondary-purple;
+    font-size: $font-size-subheadline-text;
+    font-weight: unset;
+  }
+
+  .ghost-home {
+    color: $color-secondary-grey;
+    font-size: $font-size-labels;
+  }
+
+  .link-home {
+    font-size: $font-size-labels;
+    color: $color-secondary-white;
+
+    .purple {
+      color: $color-secondary-purple;
+    }
+    .green {
+      color: $color-accent-green;
+    }
+    .pink {
+      color: $color-accent-solmon;
+    }
+  }
+
+}
