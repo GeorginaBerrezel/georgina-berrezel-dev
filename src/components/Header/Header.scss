@@ -5,7 +5,7 @@ header {
   //background-color: #333;
   color: white;
   //padding: 14px 16px;
-  border-bottom: 0.5px solid $color-secondary-grey; // Ajout du trait en bas
+  border-bottom: 0.5px solid $color-lines; // Ajout du trait en bas
 
   .nav-list {
     list-style: none;
@@ -16,7 +16,7 @@ header {
   }
 
   .nav-item {
-    border-right: 0.5px solid $color-secondary-grey;
+    border-right: 0.5px solid $color-lines;
     padding: 1.5rem;
     cursor: pointer;
     &:hover,
@@ -28,13 +28,12 @@ header {
       border-right: none;
       margin-right: 0;
       margin-left: auto; // Placer le dernier élément à droite
-      border-left: 0.5px solid #607B96;
+      border-left: 0.5px solid $color-lines;
     }
 
     .nav-link {
       text-decoration: none;
       color: $color-secondary-grey;
-      font-weight: bold;
       font-size: 16px;
 
       &:hover,

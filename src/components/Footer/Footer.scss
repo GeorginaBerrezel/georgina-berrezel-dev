@@ -1,0 +1,63 @@
+// src/components/Footer/Footer.scss
+@import '../../styles/variables';
+
+footer {
+  color: $color-secondary-grey;
+  border-top: 0.5px solid $color-lines;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .footer-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+
+      .footer-item {
+        display: flex;
+       // border-right: 0.5px solid $color-secondary-grey;
+        padding: 1.5rem;
+        cursor: pointer;
+
+        &:first-child {
+          border-right: 0.5px solid $color-lines;
+        }
+
+        &:last-child {
+          border-left: 0.5px solid $color-lines;
+          border-right: 0.5px solid $color-lines;
+        }
+
+        p {
+          margin: 0;
+        }
+
+        .footer-icon-link {
+          text-decoration: none;
+          color: $color-secondary-grey;
+          font-size: 16px;
+
+          i {
+            font-size: 24px;
+          }
+
+          .ri-github-fill{
+              padding-left: 1rem;
+          }
+
+          &:hover,
+          &:focus {
+            color: $color-secondary-white;
+          }
+        }
+      }
+    }
+  }
+}

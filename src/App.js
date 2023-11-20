@@ -4,6 +4,7 @@ import React from 'react';
 import Header from './components/Header/Header';
 import Card from './components/Card/Card';
 import Button from './components/Buttons/Button';
+import Footer from './components/Footer/Footer';
 import kasaLogementImage from './assets/img/kasa-logement.png';
 import lesPetitsPlats from './assets/img/les-petits-plats.png';
 import './styles/App.scss';
@@ -28,6 +29,8 @@ function App() {
             <Button type="cta-default">Default button</Button>
             <Button type="cta-primary">Primary button</Button>
             <Button type="cta-ghost">Ghost button</Button>
+
+            <Footer />
         </div>
     );
 }
