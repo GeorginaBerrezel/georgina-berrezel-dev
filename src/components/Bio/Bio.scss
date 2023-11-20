@@ -1,0 +1,24 @@
+// src/components/Bio/Bio.scss
+@import '../../styles/variables';
+
+.bio-content {
+  display: grid;
+  text-align: left;
+  grid-template-columns: auto auto;
+  grid-column-gap: 50px;
+  grid-row-gap: 10px;
+  height: 100%;
+  p {
+    color: $color-secondary-grey;
+    padding: 0 2rem;
+  }
+
+  .bio-content-col1 {
+    border-right: 0.5px double $color-lines;
+  }
+  .bio-content-col2 {
+    text-align: left;
+    border-right: 0.5px solid $color-lines;
+    padding: 0 2rem 0 0;
+  }
+}

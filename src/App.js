@@ -14,9 +14,9 @@ function App() {
                 <Layout>
                     <main>
                         <Routes>
-                            <Route path="/" element={<Button type="cta-default">Default button</Button>} />
                             <Route path="/projects" element={<Projects />} />
                             <Route path="/about-me" element={<About />} />
+                            {/*<Route path="/" element={<Button type="cta-default">Default button</Button>} />*/}
                         </Routes>
                     </main>
                 </Layout>
