@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 import Home from './pages/Home/Home';
-import Button from './components/Buttons/Button';
+// import Button from './components/Buttons/Button';
 import Projects from './pages/Projects/Projects';
 import About from './pages/about-me/About-me';
 
@@ -14,8 +14,9 @@ function App() {
             <div className="App">
                 <Layout>
                     <main>
-                        <Home />
                         <Routes>
+                            <Route path="/" element={<Home />} /> {/* uniquement à la racine */}
+                            <Route path="/home" element={<Home />} /> {/* Sur le logo et l'onglet hello */}
                             <Route path="/projects" element={<Projects />} />
                             <Route path="/about-me" element={<About />} />
                             {/*<Route path="/" element={<Button type="cta-default">Default button</Button>} />*/}

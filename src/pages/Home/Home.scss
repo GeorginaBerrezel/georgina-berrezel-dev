@@ -1,51 +1,62 @@
 @import '../../styles/variables';
-body {
-  margin: 0;
-}
+
 .container-home {
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   justify-content: center;
   align-items: center; // Maintient le contenu centré horizontalement
   text-align: left; // Alignement du texte à gauche
   min-height: 100vh; // Cela garantit que le contenu est centré verticalement sur toute la hauteur de la fenêtre
   margin-left: auto;
   margin-right: auto;
-  .text-home {
-    font-size: $font-size-body-text;
-    color: $color-secondary-white;
-  }
 
-  .title-home {
-    color: $color-secondary-white;
-    font-size: $font-size-headline-text;
-    font-weight: unset;
-  }
+  .content-home {
+    .content-home--up {
+      margin-bottom: 4rem;
+      .text-home {
+        font-size: $font-size-body-text;
+        color: $color-secondary-white;
+        margin: 0;
+      }
 
-  .subtitle-home {
-    color: $color-secondary-purple;
-    font-size: $font-size-subheadline-text;
-    font-weight: unset;
-  }
+      .title-home {
+        color: $color-secondary-white;
+        font-size: $font-size-headline-text;
+        font-weight: unset;
+        margin: 0;
+      }
 
-  .ghost-home {
-    color: $color-secondary-grey;
-    font-size: $font-size-labels;
-  }
-
-  .link-home {
-    font-size: $font-size-labels;
-    color: $color-secondary-white;
-
-    .purple {
-      color: $color-secondary-purple;
+      .subtitle-home {
+        color: $color-secondary-purple;
+        font-size: $font-size-subheadline-text;
+        font-weight: unset;
+        margin: 0;
+      }
     }
-    .green {
-      color: $color-accent-green;
+    .content-home--down {
+      .ghost-home {
+        color: $color-secondary-grey;
+        font-size: $font-size-labels;
+        margin: 0.6rem 0;
+      }
+
+      .link-home {
+        font-size: $font-size-labels;
+        color: $color-secondary-white;
+        margin: 0;
+
+        .purple {
+          color: $color-secondary-purple;
+        }
+
+        .green {
+          color: $color-accent-green;
+        }
+
+        .pink {
+          color: $color-accent-solmon;
+        }
     }
-    .pink {
-      color: $color-accent-solmon;
     }
   }
-
 }
