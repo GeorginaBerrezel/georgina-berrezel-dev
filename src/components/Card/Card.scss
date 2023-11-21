@@ -1,12 +1,20 @@
 // src/components/Card/Card.scss
 @import '../../styles/variables';
-
+.card-title {
+  display: flex;
+  p {
+    font-size: $font-size-labels;
+    font-weight: 700;
+    color: $color-secondary-purple;
+  }
+}
 .card {
   width: 370.348px;
   height: 314.817px;
   display: flex;
   flex-direction: column;
   border-radius: 15px;
+  border: 1px solid $color-lines;
   overflow: hidden;
   position: relative;
 
@@ -19,7 +27,7 @@
       height: 100%;
       flex-shrink: 0;
       border-radius: 15px 15px 0 0;
-      border: 1px solid #1E2D3D;
+      border: 1px solid $color-lines;
       background-size: cover;
       background-position: 50% 50%;
       background-repeat: no-repeat;
@@ -36,5 +44,11 @@
   .card-text {
     padding: 16px;
     background-color: $color-primary-light;
+    border-top: 1px solid $color-lines;
+  }
+
+  .card-button {
+    display: flex;
+    justify-content: left;
   }
 }

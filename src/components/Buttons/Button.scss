@@ -6,9 +6,10 @@
   padding: $margin-size $margin-size * 2;
   font-size: $font-size-labels;
   font-family: $font-family;
-  font-weight: bold;
+  font-weight: unset;
   text-align: center;
   text-decoration: none;
+  border: none;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 

@@ -1,0 +1,17 @@
+// src/components/Pages/Projects/Projects.scss
+@import '../../styles/variables';
+
+.container-project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin-right: auto;
+
+  .content-project {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
