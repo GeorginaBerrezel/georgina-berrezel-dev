@@ -1,0 +1,52 @@
+// src/components/Contact-form/Contact-form.scss
+@import '../../styles/variables';
+
+.form-content-col1 {
+  border-right: 0.5px double $color-lines;
+  padding: 5rem;
+}
+
+.form-content-col2 {
+  text-align: left;
+  border-right: 0.5px solid $color-lines;
+  padding: 0 2rem 0 0;
+}
+
+.container-form {
+  display: grid;
+  text-align: left;
+  grid-template-columns: auto auto;
+  grid-column-gap: 50px;
+  grid-row-gap: 10px;
+  height: 100%;
+
+  .content-form {
+    display: grid;
+
+    label {
+      color: $color-default-grey;
+      margin-bottom: 1rem;
+    }
+
+    textarea {
+      height: 145px;
+    }
+
+    input, textarea {
+      color: $color-default-grey;
+      padding: 1rem;
+      border: 1px solid $color-lines;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      font-size: $font-size-labels;
+      background-color: $color-primary-medium;
+      width: 372px;
+
+      &:focus {
+        outline: none;
+        border-color: $color-secondary-grey;
+        box-shadow: 0 0 0 2px rgba(96, 123, 150, 0.30);
+      }
+    }
+  }
+}

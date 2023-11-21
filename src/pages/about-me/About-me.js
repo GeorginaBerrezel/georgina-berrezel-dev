@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Bio from '../../components/Bio/Bio';
 import Interests from '../../components/Interests/Interests';
 import Education from '../../components/Education/Education';
-import Contact from '../../components/Contact/Contact';
+import Contact from '../../components/Contact-form/Contact-form';
 import Tabs from "../../components/Tabs/Tabs";
 import './About-me.scss';
 
