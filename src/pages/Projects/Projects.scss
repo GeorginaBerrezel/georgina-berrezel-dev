@@ -1,5 +1,48 @@
 // src/components/Pages/Projects/Projects.scss
 @import '../../styles/variables';
+.card-global-style {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem;
+}
+
+.about-container {
+  display: flex;
+
+  .sidebar {
+    width: 200px;
+    position: fixed;
+    height: 100%;
+    border-right: 0.5px solid $color-lines;
+    padding: 20px;
+  }
+}
+
+.content-tag {
+  display: block;
+  position: absolute;
+  left: 240px;
+  height: 70px;
+
+  .tags {
+    color: $color-secondary-grey;
+    display: flex;
+    border-bottom: 0.5px solid $color-lines;
+  }
+
+  .tag {
+    display: inline-block;
+    border-right: 0.5px solid $color-lines;
+    color: $color-secondary-grey;
+    padding: 5px 10px;
+    margin-right: 5px;
+    width: 100px;
+    cursor: pointer;
+  }
+}
 
 .container-project {
   display: flex;
