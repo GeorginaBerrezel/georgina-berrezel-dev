@@ -1,0 +1,64 @@
+@import '../../styles/variables';
+
+.education-list {
+  text-decoration: none;
+  color: $color-secondary-grey;
+  font-size: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+
+  .education-item {
+    margin: 1rem 0;
+    cursor: pointer;
+
+    .education-date {
+      color: $color-secondary-white;
+      padding-right: 1rem;
+    }
+  }
+}
+
+.purple {
+  font-size: $font-size-body-text;
+  color: $color-secondary-purple;
+  padding-right: 1rem;
+}
+
+.green {
+  color: $color-accent-green;
+  padding-right: 1rem;
+}
+
+.pink {
+  color: $color-accent-solmon;
+  padding-right: 1rem;
+}
+
+.snippets {
+  font-size: $font-size-code-snippets;
+  color: $color-secondary-grey;
+  padding-right: 1rem;
+
+}
+
+.experience-split {
+  color: $color-secondary-grey;
+  margin: 4rem;
+
+  .experience-item {
+    margin: 2rem;
+
+    p {
+      margin: 0;
+    }
+
+    .regular {
+      color: $color-secondary-grey;
+      padding-left: 1rem;
+
+    }
+  }
+
+}
