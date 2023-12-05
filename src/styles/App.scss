@@ -12,6 +12,9 @@ body {
 .App {
   text-align: left;
   font-size: $font-size-body-text;
+  position: relative;
+  top: 70px;
+
 
   &-logo {
     height: 40vmin;

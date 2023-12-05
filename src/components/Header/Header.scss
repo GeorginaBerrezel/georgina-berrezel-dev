@@ -5,6 +5,10 @@ header {
   color: white;
   border-bottom: 0.5px solid $color-lines; // Ajout du trait en bas
   background-color: $color-primary-medium;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
 
   .nav-list {
     list-style: none;

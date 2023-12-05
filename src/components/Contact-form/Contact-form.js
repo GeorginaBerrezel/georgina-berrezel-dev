@@ -2,9 +2,9 @@
 import React, { useState } from 'react';
 import Button from "../Buttons/Button";
 import './Contact-form.scss';
-import Card from "../Card/Card";
-import profilFunny from "../../assets/img/profil-funny.png";
-import kasaLogement from "../../assets/img/kasa-logement.png";
+// import Card from "../Card/Card";
+// import profilFunny from "../../assets/img/profil-funny.png";
+// import kasaLogement from "../../assets/img/kasa-logement.png";
 import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css'; // Importe le style CSS de la bibliothèque
 
@@ -32,8 +32,10 @@ function ContactForm() {
     };
 
     return (
+
         <div className="container-form">
-            <div className="form-content-col1">
+        {/*//     <div className="form-content-col1">*/}
+
                 <form className="content-form" onSubmit={handleSubmit}>
                     <label htmlFor="name">_name :</label>
                     <input
@@ -76,21 +78,21 @@ function ContactForm() {
                     <Button type="cta-default">submit-message</Button>
                 </form>
             </div>
-            <div className="form-content-col2">
-                <p>What I'm doing outside is doing some differents sports like BMX and skate ! But sometimes I took roller quad for enjoying and sharing with more communities</p>
-                <Card
-                    imagePath={profilFunny}
-                    description="Sport is my passion"
-                    iconPath="ri-riding-fill"
-                />
-                <p>But also</p>
-                <Card
-                    imagePath={kasaLogement}
-                    description="Coding some stuff for project who need helps !"
-                    iconPath="ri-reactjs-line"
-                />
-            </div>
-        </div>
+            // {/*<div className="form-content-col2">*/}
+            // {/*    <p>What I'm doing outside is doing some differents sports like BMX and skate ! But sometimes I took roller quad for enjoying and sharing with more communities</p>*/}
+            // {/*    <Card*/}
+            // {/*        imagePath={profilFunny}*/}
+            // {/*        description="Sport is my passion"*/}
+            // {/*        iconPath="ri-riding-fill"*/}
+            // {/*    />*/}
+            // {/*    <p>But also</p>*/}
+            // {/*    <Card*/}
+            // {/*        imagePath={kasaLogement}*/}
+            // {/*        description="Coding some stuff for project who need helps !"*/}
+            // {/*        iconPath="ri-reactjs-line"*/}
+            // {/*    />*/}
+            // {/*</div>*/}
+        //</div>
     );
 }
 

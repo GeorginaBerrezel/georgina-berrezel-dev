@@ -15,13 +15,14 @@
 .container-form {
   display: grid;
   text-align: left;
-  grid-template-columns: auto auto;
+  //grid-template-columns: auto auto;
   grid-column-gap: 50px;
   grid-row-gap: 10px;
-  height: 100%;
+  height: 100vh;
 
   .content-form {
     display: grid;
+    margin: auto;
 
     label {
       color: $color-default-grey;
